@@ -1,3 +1,22 @@
 <resources>
-    <string name="app_name">Basic components</string>
+    <string name="app_name">First App</string>
+    <string name="txt_Cadastro">Cadastro</string>
+    <string name="txt_sexo">Sexo</string>
+    <string name="radio_Masculino">Masculino</string>
+    <string name="radio_Feminino">Feminino</string>
+    <string name="btn_Cadastrar">Cadastrar</string>
+    <string name="btn_MudarTela">Mudar Tela</string>
+    <string name="btn_Tela3">Tela 3</string>
+    <string name="txt_Long">Aperte Longamente</string>
+    <string name="txt_list">List</string>
+    <string name="item_Sim">Sim</string>
+    <string name="item_Nao">Não</string>
+    <string name="item_Talvez">Talvez</string>
+    <string name="menu_Drop">Menu DropDown</string>
+    <string name="btn_TelaGrid">Tela Grid</string>
+    <string-array name="menu_Nome">
+        <item>Jose</item>
+        <item>Maria</item>
+        <item>Chico</item>
+    </string-array>
 </resources>

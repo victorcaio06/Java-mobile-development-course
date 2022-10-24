@@ -1,4 +1,4 @@
-package br.ufc.quixada.basiccomponents;
+package br.com.ufc.firstapp;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("br.ufc.quixada.basiccomponents", appContext.getPackageName());
+        assertEquals("br.com.ufc.firstapp", appContext.getPackageName());
     }
 }

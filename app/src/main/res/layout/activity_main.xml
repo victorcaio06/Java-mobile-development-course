@@ -1,41 +1,147 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/activity_main_cadastro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:gravity="center"
+        android:text="@string/txt_Cadastro"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/activity_main_nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:backgroundTint="#000000"
+        android:backgroundTintMode="add"
+        android:ems="10"
+        android:hint="Nome"
+        android:inputType="textCapWords"
+        android:textColor="#000000"
+        android:textColorHint="@color/black"
+        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/activity_main_telefone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:backgroundTint="@color/black"
+        android:backgroundTintMode="add"
+        android:ems="10"
+        android:hint="Telefone"
+        android:inputType="phone"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/activity_main_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:backgroundTint="#000000"
+        android:backgroundTintMode="add"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/activity_main_sexo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="@string/txt_sexo"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp">
+
+        <RadioButton
+            android:id="@+id/activity_main_masculino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_Masculino"
+            android:textColor="@color/black"
+            android:textColorLink="#1997FB" />
+
+        <RadioButton
+            android:id="@+id/activity_main_feminino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_Feminino"
+            android:textColor="@color/black" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/activity_main_btn_cadastrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.050000012" />
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        android:text="@string/btn_Cadastrar" />
 
-    <Switch
-        android:id="@+id/btnSwitchActivity"
-        android:layout_width="wrap_content"
+    <TextView
+        android:id="@+id/activity_main_resNome"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="332dp"
-        android:text="Switch"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.52"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:layout_margin="2dp"
+        android:textColor="@color/purple_700"
+        android:textSize="16sp"
+        android:textStyle="bold" />
 
-    <ToggleButton
-        android:id="@+id/btnToggle"
-        android:layout_width="wrap_content"
+    <TextView
+        android:id="@+id/activity_main_resTelefone"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="ToggleButton"
-        app:layout_constraintBottom_toTopOf="@+id/btnSwitchActivity"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        android:layout_margin="2dp"
+        android:textColor="@color/purple_700"
+        android:textSize="16sp"
+        android:textStyle="bold" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/activity_main_resEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:textColor="@color/purple_700"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/activity_main_resSexo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:textColor="@color/purple_700"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/activity_main_buttonTela"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:text="@string/btn_MudarTela"
+        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+
+</LinearLayout>

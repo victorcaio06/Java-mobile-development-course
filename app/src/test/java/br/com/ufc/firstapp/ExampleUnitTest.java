@@ -1,4 +1,4 @@
-package br.ufc.quixada.basiccomponents;
+package br.com.ufc.firstapp;
 
 import org.junit.Test;
 
